@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="We Are Stardust — A cinematic scrollytelling journey from the birth of the universe to the moment you exist. Experience the story of everything." />
+    <meta property="og:title" content="We Are Stardust" />
+    <meta property="og:description"
+        content="A cinematic scrollytelling experience telling the story of the universe — and you." />
+    <meta name="theme-color" content="#030014" />
+    <title>We Are Stardust — A Scrollytelling Experience</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- PROGRESS BAR -->
+    <div class="progress-bar" id="progressBar" role="progressbar" aria-label="Reading progress" aria-valuenow="0"
+        aria-valuemin="0" aria-valuemax="100"></div>
+
+    <!-- NAV -->
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+        <a href="#hero" class="nav-logo" aria-label="Return to top">&#10022; Stardust</a>
+        <div class="nav-chapters" role="list">
+            <a href="#beginning" class="nav-chapter" role="listitem">Origin</a>
+            <a href="#journey" class="nav-chapter" role="listitem">Journey</a>
+            <a href="#turning" class="nav-chapter" role="listitem">Awakening</a>
+            <a href="#climax" class="nav-chapter" role="listitem">Reach</a>
+            <a href="#ending" class="nav-chapter" role="listitem">Return</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="section hero" id="hero" aria-label="Introduction">
+        <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="hero-content">
+            <div class="hero-eyebrow reveal-fade">A Scrollytelling Experience</div>
+            <h1 class="hero-title reveal-fade delay-1">
+                <span class="hero-title-line">We Are</span>
+                <span class="hero-title-line hero-title-accent">Stardust</span>
+            </h1>
+            <p class="hero-tagline reveal-fade delay-2">
+                Thirteen billion years ago, the universe was born.<br />
+                This is the story of how it made <em>you</em>.
+            </p>
+            <div class="hero-cta reveal-fade delay-3">
+                <span class="cta-text">Scroll to Begin</span>
+                <div class="scroll-indicator" aria-hidden="true">
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHAPTER 1: BEGINNING -->
+    <section class="section chapter" id="beginning" data-chapter="1" aria-label="Chapter 1: The Beginning">
+        <div class="chapter-bg chapter-bg--1" aria-hidden="true">
+            <div class="bg-glow bg-glow--gold" aria-hidden="true"></div>
+        </div>
+
+        <div class="chapter-inner">
+            <div class="chapter-number scroll-reveal" aria-hidden="true">01</div>
+            <div class="chapter-text-block">
+                <div class="chapter-label scroll-reveal slide-left">The Beginning</div>
+                <h2 class="chapter-title scroll-reveal slide-up">Before time,<br />there was nothing.</h2>
+                <p class="chapter-body scroll-reveal slide-up delay-1">
+                    Thirteen point eight billion years ago, something extraordinary happened.
+                    A single point — smaller than a grain of sand, hotter than any fire —
+                    exploded into existence. Not an explosion <em>in</em> space.
+                    An explosion <em>of</em> space itself.
+                </p>
+                <p class="chapter-body scroll-reveal slide-up delay-2">
+                    In the first microsecond, the universe was a screaming soup of energy.
+                    No stars. No planets. No darkness. Just blinding, furious light.
+                </p>
+            </div>
+
+            <div class="visual-block scroll-reveal scale-up">
+                <div class="visual-orb visual-orb--explosion">
+                    <div class="orb-core" aria-hidden="true"></div>
+                    <div class="orb-ring orb-ring--1" aria-hidden="true"></div>
+                    <div class="orb-ring orb-ring--2" aria-hidden="true"></div>
+                    <div class="orb-ring orb-ring--3" aria-hidden="true"></div>
+                </div>
+                <p class="visual-caption scroll-reveal slide-up delay-3">t = 10&#8315;&#179;&#8309; seconds after the
+                    Big Bang</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHAPTER 2: JOURNEY -->
+    <section class="section chapter chapter--wide" id="journey" data-chapter="2" aria-label="Chapter 2: The Journey">
+        <div class="chapter-bg chapter-bg--2" aria-hidden="true">
+            <div class="bg-glow bg-glow--blue" aria-hidden="true"></div>
+            <div class="bg-glow bg-glow--purple" aria-hidden="true"></div>
+        </div>
+
+        <div class="sticky-journey" id="stickyJourney">
+            <div class="sticky-frame">
+                <div class="sticky-visual" id="stickyVisual" aria-hidden="true">
+                    <canvas class="galaxy-canvas" id="galaxyCanvas" aria-hidden="true"></canvas>
+                </div>
+                <div class="sticky-progress-dots" id="stickyDots" aria-hidden="true">
+                    <div class="sdot active"></div>
+                    <div class="sdot"></div>
+                    <div class="sdot"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="journey-panels">
+            <div class="journey-panel" data-panel="0">
+                <div class="chapter-number" aria-hidden="true">02</div>
+                <div class="chapter-label scroll-reveal slide-right">The Journey</div>
+                <h2 class="chapter-title scroll-reveal slide-up">Darkness learns<br />to breathe.</h2>
+                <p class="chapter-body scroll-reveal slide-up delay-1">
+                    Three hundred million years passed. The universe cooled. Gravity pulled
+                    particles together — hydrogen atoms clumping into vast clouds, those clouds
+                    collapsing under their own weight until the pressure became unbearable.
+                </p>
+                <p class="chapter-body scroll-reveal slide-up delay-2">
+                    Then, one by one, the first stars ignited. The universe saw light for the
+                    second time — but this time, the light had <em>structure</em>.
+                </p>
+            </div>
+
+            <div class="journey-panel" data-panel="1">
+                <div class="chapter-label scroll-reveal slide-right">300 Million Years Later</div>
+                <h2 class="chapter-title scroll-reveal slide-up">Stars are born.<br />Stars die.<br />And in dying —
+                    <em>give</em>.
+                </h2>
+                <p class="chapter-body scroll-reveal slide-up delay-1">
+                    Inside each star, gravity and nuclear fire forged the elements.
+                    Carbon. Oxygen. Iron. Silicon. The building blocks of everything
+                    you will ever touch, taste, or become.
+                </p>
+                <p class="chapter-body scroll-reveal slide-up delay-2">
+                    When a star exploded — a supernova — it scattered those atoms across
+                    light-years of space. Generous deaths. Beautiful catastrophes.
+                </p>
+            </div>
+
+            <div class="journey-panel" data-panel="2">
+                <div class="chapter-label scroll-reveal slide-right">4.6 Billion Years Ago</div>
+                <h2 class="chapter-title scroll-reveal slide-up">A small star.<br />A blue dot.<br />A quiet miracle.
+                </h2>
+                <p class="chapter-body scroll-reveal slide-up delay-1">
+                    From the debris of a dying star, a new solar system formed. A medium-sized
+                    star — your sun — with eight planets orbiting it. The third one happened
+                    to sit in the exact right place: not too hot, not too cold.
+                </p>
+                <p class="chapter-body scroll-reveal slide-up delay-2">
+                    Water pooled. Oceans formed. And in those warm, dark oceans,
+                    something extraordinary stirred.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHAPTER 3: TURNING POINT -->
+    <section class="section chapter" id="turning" data-chapter="3" aria-label="Chapter 3: The Awakening">
+        <div class="chapter-bg chapter-bg--3" aria-hidden="true">
+            <div class="bg-glow bg-glow--green" aria-hidden="true"></div>
+        </div>
+
+        <div class="turning-split">
+            <div class="turning-visual scroll-reveal scale-up" aria-hidden="true">
+                <div class="dna-visual">
+                    <div class="dna-strand" id="dnaStrand" aria-hidden="true"></div>
+                </div>
+            </div>
+
+            <div class="turning-text">
+                <div class="chapter-number scroll-reveal" aria-hidden="true">03</div>
+                <div class="chapter-label scroll-reveal slide-right">The Awakening</div>
+                <h2 class="chapter-title chapter-title--large scroll-reveal slide-up">
+                    Life learned<br />to <em>remember</em>.
+                </h2>
+                <p class="chapter-body scroll-reveal slide-up delay-1">
+                    Three point eight billion years ago, in a chemical tide pool,
+                    a molecule formed that could copy itself. One became two.
+                    Two became four. The universe had discovered memory.
+                </p>
+                <p class="chapter-body scroll-reveal slide-up delay-2">
+                    Over billions of years, that molecule refined itself — growing more
+                    complex, more efficient, more alive. Fish swam. Forests breathed.
+                    Dinosaurs thundered across continents.
+                </p>
+                <blockquote class="turning-quote scroll-reveal slide-up delay-3">
+                    <p>"Life does not simply happen to the universe. Life <em>is</em> the universe happening to itself."
+                    </p>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHAPTER 4: CLIMAX -->
+    <section class="section chapter chapter--climax" id="climax" data-chapter="4" aria-label="Chapter 4: The Reach">
+        <div class="chapter-bg chapter-bg--4" aria-hidden="true">
+            <canvas class="stars-canvas" id="starsCanvas" aria-hidden="true"></canvas>
+            <div class="bg-glow bg-glow--cosmic" aria-hidden="true"></div>
+        </div>
+
+        <div class="climax-content">
+            <div class="climax-intro">
+                <div class="chapter-number scroll-reveal" aria-hidden="true">04</div>
+                <div class="chapter-label scroll-reveal slide-left">The Reach</div>
+                <h2 class="chapter-title chapter-title--climax scroll-reveal slide-up">
+                    Then &#8212; <em>you</em>.
+                </h2>
+            </div>
+
+            <div class="climax-stats">
+                <div class="stat-card scroll-reveal slide-up" style="--delay: 0">
+                    <div class="stat-number">7B</div>
+                    <div class="stat-label">heartbeats in a lifetime</div>
+                </div>
+                <div class="stat-card scroll-reveal slide-up" style="--delay: 1">
+                    <div class="stat-number">37T</div>
+                    <div class="stat-label">cells in your body — all forged in stars</div>
+                </div>
+                <div class="stat-card scroll-reveal slide-up" style="--delay: 2">
+                    <div class="stat-number">13.8B</div>
+                    <div class="stat-label">years the universe waited for this moment</div>
+                </div>
+            </div>
+
+            <div class="climax-text-block scroll-reveal slide-up delay-3">
+                <p class="chapter-body chapter-body--large">
+                    You are not separate from the universe. You are the universe,
+                    having arranged itself into a form capable of looking back at itself
+                    and asking: <em>"How did I get here?"</em>
+                </p>
+                <p class="chapter-body scroll-reveal slide-up delay-4">
+                    Every atom in your body was forged in the heart of a dying star.
+                    The calcium in your bones. The iron in your blood. The oxygen in
+                    each breath you take. Stardust, organized by chance and time
+                    into something that can <em>wonder</em>.
+                </p>
+            </div>
+
+            <div class="human-gaze scroll-reveal scale-up" aria-hidden="true">
+                <div class="human-figure" aria-hidden="true"></div>
+                <div class="gaze-rays" id="gazeRays" aria-hidden="true"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHAPTER 5: ENDING -->
+    <section class="section chapter chapter--ending" id="ending" data-chapter="5" aria-label="Chapter 5: The Return">
+        <div class="chapter-bg chapter-bg--5" aria-hidden="true">
+            <div class="bg-glow bg-glow--dawn" aria-hidden="true"></div>
+        </div>
+
+        <div class="ending-content">
+            <div class="chapter-number scroll-reveal" aria-hidden="true">05</div>
+            <div class="chapter-label scroll-reveal slide-left">The Return</div>
+
+            <h2 class="ending-title scroll-reveal slide-up">
+                The universe<br />knows itself<br /><em>through you.</em>
+            </h2>
+
+            <p class="chapter-body ending-body scroll-reveal slide-up delay-1">
+                One day, the atoms that make you up will return. They will scatter —
+                into soil, into air, into the ocean. They will be breathed by someone
+                not yet born. They will be part of a tree, a bird, a raindrop.
+            </p>
+
+            <p class="chapter-body ending-body scroll-reveal slide-up delay-2">
+                The universe is not indifferent. It is patient. It has been building
+                toward <em>you</em> for 13.8 billion years. And it will continue
+                building long after.
+            </p>
+
+            <div class="final-quote scroll-reveal slide-up delay-3">
+                <blockquote>
+                    <p class="final-quote-text">
+                        "The cosmos is within us. We are made of star-stuff.
+                        We are a way for the universe to know itself."
+                    </p>
+                    <footer class="final-quote-author">&#8212; Carl Sagan</footer>
+                </blockquote>
+            </div>
+
+            <div class="ending-cta scroll-reveal slide-up delay-4">
+                <p class="ending-cta-label">You've reached the end of everything — and the beginning.</p>
+                <div class="cta-buttons">
+                    <a href="#hero" class="btn btn--primary" id="experienceAgain">Experience It Again</a>
+                    <a href="https://www.nasa.gov/universe" class="btn btn--ghost" target="_blank"
+                        rel="noopener noreferrer">Explore the Cosmos &#8599;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="ending-stars" id="endingStars" aria-hidden="true"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+        <p class="footer-text">
+            Made with wonder &amp; curiosity &nbsp;&#183;&nbsp;
+            <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer" class="footer-link">NASA</a>
+            &nbsp;&#183;&nbsp;
+            <a href="https://www.esa.int" target="_blank" rel="noopener noreferrer" class="footer-link">ESA</a>
+        </p>
+        <p class="footer-sub">All imagery is CSS &amp; Canvas rendered. No external image resources required.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
